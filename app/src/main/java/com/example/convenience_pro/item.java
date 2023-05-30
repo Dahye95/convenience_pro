@@ -5,4 +5,6 @@ public class item {
     public String itemName;
     public String itemPrice;
     public String itemImg;
+
+    public String itemPlus;
 }
