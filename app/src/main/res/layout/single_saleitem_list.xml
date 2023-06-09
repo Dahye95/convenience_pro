@@ -12,6 +12,7 @@
         android:background="#FFFFFF"
         android:layout_marginBottom="15dp">
         <TextView
+            android:id="@+id/rvWhere"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -19,6 +20,7 @@
             android:textColor="@color/black"/>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItemLists"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </androidx.recyclerview.widget.RecyclerView>

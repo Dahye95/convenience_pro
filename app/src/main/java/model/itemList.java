@@ -1,6 +1,8 @@
-package com.example.convenience_pro;
+package model;
 
 import java.util.ArrayList;
+
+import model.item;
 
 public class itemList {
     public int id;
