@@ -1,0 +1,101 @@
+{
+  "items": [
+    {
+      "item_idx": "00001",
+      "name": "농심)데이플러스콜라겐500ML",
+      "price": 2200,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801043068604_001.jpg"
+    },
+    {
+      "item_idx": "00002",
+      "name": "농심)데이플러스프로틴500ML",
+      "price": 2200,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801043068574_001.jpg"
+    },
+    {
+      "item_idx": "00003",
+      "name": "덴마크)테이크얼라이브제로톡400",
+      "price": 2500,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801155742614_001.jpg"
+    },
+    {
+      "item_idx": "00004",
+      "name": "덴마크)프룻믹스제로500ML",
+      "price": 2500,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801155742997_001.jpg"
+    },
+    {
+      "item_idx": "00005",
+      "name": "크리스탈라이트)레몬아이스드10T",
+      "price": 7700,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_043000945117_002.jpg"
+    },
+    {
+      "item_idx": "00006",
+      "name": "크리스탈라이트)체리석류10T",
+      "price": 7700,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801065001665_002.jpg"
+    },
+    {
+      "item_idx": "00007",
+      "name": "크리스탈라이트)피치망고10T",
+      "price": 7700,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801065001160_002.jpg"
+    },
+    {
+      "item_idx": "00008",
+      "name": "크리스탈라이트)핑크레몬10T",
+      "price": 7700,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8801065001153_002.jpg"
+    },
+    {
+      "item_idx": "00009",
+      "name": "안동간고등어100G(순살/냉동)",
+      "price": 5000,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8809093441002_002.jpg"
+    },
+    {
+      "item_idx": "00010",
+      "name": "노가리먹태1입",
+      "price": 6900,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8809677721063_002.jpg"
+    },
+    {
+      "item_idx": "00011",
+      "name": "녹차녹차돌자반55G",
+      "price": 3300,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8809186873710_001.jpg"
+    },
+    {
+      "item_idx": "00012",
+      "name": "파래파래돌자반55G",
+      "price": 3300,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8809186873703_001.jpg"
+    },
+    {
+      "item_idx": "00013",
+      "name": "광동)헛개파워100ML",
+      "price": 5000,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8806002010861_865.jpg"
+    },
+    {
+      "item_idx": "00014",
+      "name": "광동)밀싹보리차500ML",
+      "price": 1800,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_8806002020174_001.jpg"
+    },
+    {
+      "item_idx": "00015",
+      "name": "NEW)한끼스테이크(부채)150G",
+      "price": 12500,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_2345001703894_002.jpg"
+    },
+    {
+      "item_idx": "00016",
+      "name": "NEW)한끼스테이크(채끝)150G",
+      "price": 12500,
+      "img": "https://image.woodongs.com/imgsvr/item/GD_2345001707618_001.jpg"
+    }
+  ],
+  "name": "GS25"
+}

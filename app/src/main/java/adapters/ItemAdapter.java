@@ -44,11 +44,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.CustomViewHold
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         item proItem = items.get(position);
-        holder.tvName.setText(proItem.itemName);
-        holder.tvPrice.setText(proItem.itemPrice);
+        holder.tvName.setText(proItem.name);
+        holder.tvPrice.setText(proItem.price);
         holder.tvPlus.setText(proItem.itemPlus);
 
-        Picasso.get().load(proItem.itemImgUrl)
+        Picasso.get().load(proItem.img)
                         .into(holder.ivImg);
 
 

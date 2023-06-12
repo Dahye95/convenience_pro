@@ -7,6 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import adapters.itemListAdapter;
@@ -43,46 +51,60 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<itemList> itemLists = new ArrayList<itemList>();
         itemList cu_list = new itemList();
         cu_list.id = 1;
-        cu_list.itemListName="CU";
+        cu_list.itemListName = "gs25";
         cu_list.items = new ArrayList<>();
 
-        item saleItem = new item();
-        saleItem.id = 1;
-        saleItem.itemImgUrl="https://tqklhszfkvzk6518638.cdn.ntruss.com/product/6921211104292.jpg";
-        saleItem.itemName ="농심)멘토스레인보우";
-        saleItem.itemPrice="800원";
-        saleItem.itemPlus ="1+1";
+
+        InputStream inputStream = getResources().openRawResource(R.raw.sample_gs25);
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        StringBuffer stringBuffer = new StringBuffer();
+        String line = null;
+
+        try {
+            while ((line = bufferedReader.readLine()) != null) {
+                stringBuffer.append(line);
+
+            }
+            Log.v("TAG", "스트링버퍼:" + stringBuffer.toString());
 
 
-        Log.e("dfdfdf","Dfdfdf"+cu_list);
+            JSONObject jsonObject = new JSONObject(stringBuffer.toString());
+            JSONArray jsonArray = new JSONArray(jsonObject.getString("items"));
+//            Log.e("============================","jsonobject"+jsonObject);
+//            Log.e("=========","jsonArray"+jsonArray);
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject1 = (JSONObject) jsonArray.get(i);
+                Log.e("=========","jsonArray"+i);
+                int item_idx = jsonObject1.getInt("item_idx");
+                String name = jsonObject1.getString("name");
+                String price = jsonObject1.getString("price");
+                String img = jsonObject1.getString("img");
 
-        item saleItem2 = new item();
-        saleItem2.id = 2;
-        saleItem2.itemImgUrl="https://tqklhszfkvzk6518638.cdn.ntruss.com/product/8801094202606.jpg";
-        saleItem2.itemName ="코카)스프라이트P500ml";
-        saleItem2.itemPrice="2,000원";
-        saleItem2.itemPlus ="1+1";
+
+                item saleItem = new item();
+                saleItem.item_idx = item_idx;
+                saleItem.img = img;
+                saleItem.name = name;
+                saleItem.price = price;
+                saleItem.itemPlus = "1+1";
+
+                Log.e("dfdfdf", "Dfdfdf" + cu_list);
 
 
+                cu_list.items.add(saleItem);
 
-        item saleItem3 = new item();
-        saleItem3.id = 3;
-        saleItem3.itemImgUrl="https://tqklhszfkvzk6518638.cdn.ntruss.com/product/8806002010861.jpg";
-        saleItem3.itemName ="광동)헛개파워병";
-        saleItem3.itemPrice="5,000원";
-        saleItem3.itemPlus ="1+1";
+            }
+            itemLists.add(cu_list);
+            Log.e("aaaaaa", "==========" + itemLists);
 
-        cu_list.items.add(saleItem);
-        cu_list.items.add(saleItem2);
-        cu_list.items.add(saleItem3);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
 
-       itemLists.add(cu_list);
-       Log.e("aaaaaa","=========="+itemLists);
-            return itemLists;
-
+        return itemLists;
     }
-
-
-
-
-}
+    }

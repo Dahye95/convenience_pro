@@ -1,10 +1,10 @@
 package model;
 
 public class item {
-    public int id;
-    public String itemName;
-    public String itemPrice;
-    public String itemImgUrl;
+    public int item_idx;
+    public String name;
+    public String price;
+    public String img;
 
     public String itemPlus;
 }
