@@ -5,12 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="View.MainActivity">
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:id="@+id/textview">
+    </TextView>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvItemListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvItemListView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-    </androidx.recyclerview.widget.RecyclerView>
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
 </LinearLayout>
